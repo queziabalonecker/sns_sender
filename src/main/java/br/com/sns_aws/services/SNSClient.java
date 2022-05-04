@@ -6,7 +6,7 @@ import software.amazon.awssdk.services.sns.SnsClient;
 
 public class SNSClient {
   
-	public static SnsClient returnSQSClient(AwsCredentialsProvider credentialsProvider) {
+	public static SnsClient returnSNSClient(AwsCredentialsProvider credentialsProvider) {
         SnsClient snsClient = SnsClient.builder()
                 .region(Region.US_EAST_1)
                 .credentialsProvider(credentialsProvider)

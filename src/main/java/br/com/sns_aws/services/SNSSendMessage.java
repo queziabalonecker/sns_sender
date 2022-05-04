@@ -6,7 +6,7 @@ import software.amazon.awssdk.services.sns.model.PublishResponse;
 
 public class SNSSendMessage {
 	
-	 static SnsClient snsClient = SNSClient.returnSQSClient(CredentialsProvider.returnCredentials());
+	 static SnsClient snsClient = SNSClient.returnSNSClient(CredentialsProvider.returnCredentials());
 
 	public static void sendMessage(String message) {
 			
